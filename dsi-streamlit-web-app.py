@@ -51,7 +51,7 @@ if st.button("Submit For Predection"):
     new_data = pd.DataFrame({"age" : [age],"gender":[gender],"credit score":[credit_score]})
     
     # apply model pipeline to the input daat and extreact probability predection
-    pred_proba = model.predit_proba(new_data)[0][1]
+    pred_proba = model.predict_proba(new_data)[0][1]
     
     # output predection
     st.subheader(f"Based in the customer attribute, our model predicts a purchase probability of {pred_proba:.0%}")
