@@ -48,7 +48,7 @@ credit_score = st.number_input(
 if st.button("Submit For Predection"):
     
     #store our data in dataframe 
-    new_data = pd.DataFrame({"age" : [age],"gender":[gender],"credit score":[credit_score]})
+    new_data = pd.DataFrame({"age" : [age], "gender" : [gender], "credit_score" : [credit_score]})
     
     # apply model pipeline to the input daat and extreact probability predection
     pred_proba = model.predict_proba(new_data)[0][1]
