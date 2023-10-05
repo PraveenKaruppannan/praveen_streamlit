@@ -13,7 +13,7 @@ import joblib
 
 #loading our model pipeline object 
 
-model = joblib.load("mode.joblib")
+model = joblib.load("model.joblib")
 
 #add title and instructions
 
