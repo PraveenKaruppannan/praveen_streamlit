@@ -23,7 +23,7 @@ st.subheader("Enter customer information and sumbit for likelihood to purchase")
 # age input form
 
 age = st.number_input(
-    lable= "01. Enter the customer's age",
+    label= "01. Enter the customer's age",
     min_value = 18,
     max_value = 120,
     value = 35)
@@ -31,13 +31,13 @@ age = st.number_input(
 # gender import form 
 
 gender = st.radio(
-    lable= "02. Enter the customer's gender",
+    label= "02. Enter the customer's gender",
     options = ["M","F"])
 
 # Credit Score input form 
 
 credit_score = st.number_input(
-    lable= "01. Enter the customer's credit score",
+    label= "01. Enter the customer's credit score",
     min_value = 0,
     max_value = 1000,
     value = 500)
